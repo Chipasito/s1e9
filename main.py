@@ -4,11 +4,11 @@ from typing import Optional
 app = FastAPI(title="Phase Change Diagram API")
 
 # Datos de ejemplo (simulando la curva de saturación P-v)
-# Valores ficticios basados en presión (MPa) -> (v_liquid, v_vapor)
+# Valores ficticios basados en presión (MPa) -> (v_liquid, v_vapor) simulacion base de datos
 PHASE_CHANGE_DATA = {
     0.1: {"specific_volume_liquid": 0.001043, "specific_volume_vapor": 1.694},
     1: {"specific_volume_liquid": 0.001127, "specific_volume_vapor": 0.1944},
-    10: {"specific_volume_liquid": 0.0035, "specific_volume_vapor": 0.0035},  # Punto crítico (ejemplo de la trama)
+    10: {"specific_volume_liquid": 0.0035, "specific_volume_vapor": 0.0035},  # Punto crítico (ejemplo de la trama)git
     20: {"specific_volume_liquid": 0.005, "specific_volume_vapor": 0.002},
 }
 
